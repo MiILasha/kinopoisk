@@ -1,0 +1,42 @@
+nav {
+    height: 72px;
+    background-color: #141414;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.header {
+    background-color: white;
+    margin-top: 1%; 
+}
+
+.top-gun-img {
+    width: 300px;
+    margin-top: 1%;
+}
+
+.flap_img {
+    width: 150px;
+    margin-top: 7%;
+}
+
+.top-gun-text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-gun-text-name {
+    margin-bottom: 1%;
+    font-weight: 900;
+    font-size:xx-large
+}
+
+.top-gun-text-mini {
+    font-weight: lighter;
+}
+
+.top-gun-text-width {
+    margin-top: 0%;
+}
