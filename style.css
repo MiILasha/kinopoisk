@@ -4,7 +4,9 @@ nav {
 }
 
 body {
-    background-color: #ececec;
+    background-color: #F4F4F4;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
