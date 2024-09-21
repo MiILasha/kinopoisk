@@ -30,13 +30,23 @@ body {
 .top-gun-text-name {
     margin-bottom: 1%;
     font-weight: 900;
-    font-size:xx-large
+    font-size:xx-large;
+    margin: 0px 0px 16px;
 }
 
 .top-gun-text-mini {
-    font-weight: lighter;
+    color: rgba(0, 0, 0, .6);
 }
 
 .top-gun-text-width {
     margin-top: 0%;
+}
+
+.top-gun-first {
+    margin-right: 160px;
+}
+
+.top-gun-text-eng {
+    font-size: 22px;
+    line-height: 28px;
 }
