@@ -8,6 +8,50 @@ nav {
     margin-top: 1%; 
 }
 
+/*Третий экран*/
+.feedback {
+    margin-top: 20%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    padding-bottom: 2%;
+}
+
+.email-div {
+    width: 50%;
+}
+
+#submit {
+    margin-top: 3%;
+}
+
+.title-main {
+    padding: 0.5%;
+}
+
+.tite-text {
+
+}
+
+.title-image {
+    width: 24px;
+    height: 24px;
+    color: rgba(31, 31, 31, .95);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.logo-image {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    padding: 2.5% 3% 20px;
+    border: 1px solid black;
+    border-top-color: rgba(192, 192, 192, 0.1);
+}
+
+/*Топ ган */
+
 .top-gun-img {
     width: 300px;
     margin-top: 1%;
@@ -31,7 +75,7 @@ nav {
 }
 
 .top-gun-text-grey {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .top-gun-first {
@@ -57,3 +101,4 @@ nav {
 .top-gun-header {
     margin-bottom: 48px;
 }
+
