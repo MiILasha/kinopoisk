@@ -8,13 +8,63 @@ nav {
     margin-top: 1%; 
 }
 
+/*Подвал смерти*/
+footer {
+    background-color: black;
+}
+
+.footer-info {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16pt;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.flooter-text {
+    padding-bottom: 2.1%;
+    padding-top: 2.3%;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 89%;
+    display:grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.flooter-text-year {
+    justify-content: start;
+    align-items: start;
+}
+
+.flooter-text-company {
+    justify-self: flex-end;
+    align-items: flex-end;
+}
+
+.flooter-text-company-name {
+    font-size: 15px;
+}
+
+#telegramm {
+    width: 50%;
+    height: 50%;
+    fill: white;
+}
+
+#telegramm:hover {
+    fill: red;
+}
+
 /*Третий экран*/
 .feedback {
     margin-top: 20%;
     background-color: black;
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
-    padding-bottom: 2%;
 }
 
 .email-div {
@@ -41,6 +91,10 @@ nav {
     text-decoration: none;
 }
 
+#vk {
+    margin-left: 0px;
+}
+
 .logo-image {
     background-color: black;
     color: rgba(255, 255, 255, 0.6);
@@ -48,6 +102,12 @@ nav {
     padding: 2.5% 3% 20px;
     border: 1px solid black;
     border-top-color: rgba(192, 192, 192, 0.1);
+}
+
+/*Plyr video*/
+.plyr-video {
+    margin: 50px auto;
+    max-width: 500px;
 }
 
 /*Топ ган */
