@@ -8,6 +8,18 @@ nav {
     margin-top: 1%; 
 }
 
+/*Карточки филмов*/
+.film-card {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    max-width: 540px;
+}
+
+.grey {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
 /*Подвал смерти*/
 footer {
     background-color: black;
@@ -135,7 +147,7 @@ footer {
 }
 
 .top-gun-text-grey {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .top-gun-first {
