@@ -9,6 +9,16 @@ nav {
 }
 
 /*Карточки филмов*/
+.p-margin {
+    margin-bottom: auto;
+}
+
+.flap_img {
+    width: 9.5em;
+    max-width: 160px;
+    margin: 6% 8%;
+}
+
 .film-card {
     background-color: rgb(255, 255, 255);
     width: auto;
@@ -124,21 +134,16 @@ footer {
 
 /*Топ ган */
 
-.top-gun-img {
+.film-img {
     width: 300px;
     margin-top: 1%;
 }
 
-.flap_img {
-    width: 150px;
-    margin-top: 7%;
-}
-
-.top-gun-text {
+.film-text {
     display: block;
 }
 
-.top-gun-text-name {
+.film-text-name {
     margin-bottom: 1%;
     font-weight: 900;
     font-size:xx-large;
@@ -146,31 +151,31 @@ footer {
     font-size: 40px;
 }
 
-.top-gun-text-grey {
+.film-text-grey {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.top-gun-first {
+.film-first {
     width: 160px;
 }
 
-.top-gun-text-eng {
+.film-text-eng {
     font-size: 22px;
     line-height: 28px;
 }
 
-.top-gun-film-text {
+.film-film-text {
     padding: 8px 0px;
     display: flex;
 }
 
-.top-gun-the-film {
+.film-the-film {
     margin-bottom: 9px;
     font-size: 22px;
     line-height: 28px;
 }
 
-.top-gun-header {
+.film-header {
     margin-bottom: 48px;
 }
 
