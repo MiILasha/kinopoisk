@@ -4,13 +4,28 @@ nav {
 }
 
 .header {
+    margin-top: 1%;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.bg-white {
     background-color: white;
-    margin-top: 1%; 
+    padding-bottom: 2%;
+    padding-top: 0.4%;
+    margin-top: 1%;
 }
 
 /*Карточки филмов*/
 .p-margin {
     margin-bottom: auto;
+}
+
+.card {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .flap_img {
@@ -29,6 +44,24 @@ nav {
     color: rgba(0, 0, 0, 0.6);
 }
 
+/*Infoblock*/
+#interesting {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    padding-top: 1%;
+}
+
+.title-main1 {
+    font-size: 31pt;
+    text-align: center;
+}
+
+.title-text1 {
+    font-size: 21pt;
+    text-align: center;
+}
 
 /*Подвал смерти*/
 footer {
@@ -83,7 +116,7 @@ footer {
 
 /*Третий экран*/
 .feedback {
-    margin-top: 20%;
+    margin-top: 19%;
     background-color: black;
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px;
@@ -129,10 +162,9 @@ footer {
 /*Plyr video*/
 .plyr-video {
     margin: 50px auto;
-    max-width: 500px;
 }
 
-/*Топ ган */
+/*Film*/
 
 .film-img {
     width: 300px;
@@ -178,4 +210,3 @@ footer {
 .film-header {
     margin-bottom: 48px;
 }
-
