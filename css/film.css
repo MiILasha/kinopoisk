@@ -1,0 +1,50 @@
+/*Plyr video*/
+.plyr-video {
+    margin: 50px auto;
+}
+
+/*Film*/
+.film-img {
+    width: 300px;
+    margin-top: 1%;
+}
+
+.film-text {
+    display: block;
+}
+
+.film-text-name {
+    margin-bottom: 1%;
+    font-weight: 900;
+    font-size:xx-large;
+    margin: 0px 0px 16px;
+    font-size: 40px;
+}
+
+.film-text-grey {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.film-first {
+    width: 160px;
+}
+
+.film-text-eng {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.film-film-text {
+    padding: 8px 0px;
+    display: flex;
+}
+
+.film-the-film {
+    margin-bottom: 9px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.film-header {
+    margin-bottom: 48px;
+}
