@@ -22,3 +22,12 @@
 .grey {
     color: rgba(0, 0, 0, 0.6);
 }
+
+.film-title {
+    color: #212529;
+    text-decoration: none;
+}
+
+.dir-link {
+    color: rgba(0, 0, 0, 0.6);
+}

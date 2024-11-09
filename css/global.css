@@ -12,3 +12,7 @@ body {
 .header {
     margin-top: 1%;
 }
+
+.text-hover:hover {
+    color: #f50;
+}
