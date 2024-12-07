@@ -9,13 +9,17 @@
     <!-- Favicon -->
     <link rel="icon" href="image/kinopoisk-ico.png" sizes="32x32">
 
-    <!-- Bootstrap 5.3.2 -->
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Java script -->
+    <script src="js/inner.js"></script>
 
     <!-- Style css -->
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/card.css">
@@ -37,6 +41,13 @@
             </a>
         </div>
     </nav>
+
+    <div class="container bg-white">
+        <form action="" method="POST">
+            <input type="email" class="form-control" name="mail" id="email">
+            <input type="submit" id="submit" class="form-control" value="Отправить">
+        </form>
+    </div>
 
     <!-- <div class="container bg-white">
         Infoblock
@@ -203,32 +214,6 @@
     </div>
 
     <!-- Flooter -->
-    <section class="feedback">
-        <div class="container">
-            <div class="col-sm-12 flooter-text">
-                <spam class="flooter-text-year">© 2023 — 2024, Kinopoisk</spam>
-                <spam class="flooter-text-company">Проект компании <spam class="flooter-text-company-name">Artem?</spam></spam>
-            </div>
-        </div>
-    </section>
-
-    <section class="logo-image">
-        <div class="container">
-            <div class="col-sm-12" align="center">
-                <a href="https://vk.com/id484095375" class="title-image">
-                    <img src="image/vk.svg" class="title-image" alt="nope" id="vk">
-                </a>
-                <a href="https://t.me/xxartyomxx" class="title-image">
-                    <img src="image/telegram.svg" class="title-image" alt="nope" id="telegram">
-                </a>
-                <a href="https://youtube.com/@supersadman2022?si=Tk2DqeLEnzfyADe0" class="title-image">
-                    <img src="image/youtube.svg" class="title-image" alt="nope" id="youtube">
-                </a>
-                <a href="https://steamcommunity.com/profiles/76561198970098920/" class="title-image">
-                    <img src="image/steam.svg" class="title-image" alt="nope" id="stean">
-                </a>
-            </div>
-        </div>
-    </section>
+    <div id="flooter"></div>
 </body>
 </html>
