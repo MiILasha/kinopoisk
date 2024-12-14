@@ -1,4 +1,22 @@
-$("#flooter").prepend(`<section class="feedback">
+$("#navbar").prepend(`
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div style="width: 1024px;" class="container-fluid">
+                <a href="kinopoisk.html">
+                    <img style="height: 45px;" src="image/kinoico.svg" alt="nope">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+                <a class="m-3" href="https://discord.gg/ztzZmKFX">
+                    <img style="height: 33px;" src="image/discord.svg" alt="nope" id="discord">
+                </a>
+            </div>
+        </nav>
+    `)
+
+$("#flooter").prepend(`
+        <section class="feedback">
             <div class="container">
                 <div class="col-sm-12 flooter-text">
                     <spam class="flooter-text-year">© 2023 — 2024, Kinopoisk</spam>
@@ -20,7 +38,7 @@ $("#flooter").prepend(`<section class="feedback">
                         <img src="image/youtube.svg" class="title-image" alt="nope" id="youtube">
                     </a>
                     <a href="https://steamcommunity.com/profiles/76561198970098920/" class="title-image">
-                        <img src="image/steam.svg" class="title-image" alt="nope" id="stean">
+                        <img src="image/steam.svg" class="title-image" alt="nope" id="steam">
                     </a>
                 </div>
             </div>
