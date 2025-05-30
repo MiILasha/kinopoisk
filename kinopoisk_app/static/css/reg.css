@@ -1,0 +1,76 @@
+.reg-center {
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background: #e1e1fa;
+    background: linear-gradient(125deg,rgba(225, 225, 250, 1) 20%, rgba(90, 102, 105, 1) 80%);
+}
+
+.reg-padding {
+    padding-top: 10%;
+    width: max-content;
+    height: max-content;
+}
+
+.reg-main {
+    width: 250pt;
+    margin-inline: 20pt;
+    margin-block: 40pt;
+}
+
+.fractal {
+    margin-top: 10%;
+    margin-left: 8%;
+    width: 275pt;
+}
+
+.card {
+    background-color: #141414de;
+    color: rgba(247, 247, 255, .9);
+    border-radius: 10%;
+}
+
+.reg-button{
+    margin-top: 15%;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+.reg-button span{
+    position: relative;
+    z-index: 2;
+}
+  
+.reg-button:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(90, 102, 105, 1) 80%;
+    transition: all .35s;
+}
+  
+.reg-button:hover{
+    color: #fff;
+}
+  
+.reg-button:hover:after{
+    width: 100%;
+}

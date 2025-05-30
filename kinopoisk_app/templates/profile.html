@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинопоиск: профиль</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'image/kinopoisk-ico.png' %}" sizes="32x32">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flooter.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div style="width: 1024px;" class="container-fluid">
+            <a href="{% url 'index' %}">
+                <img style="height: 45px;" src="{% static 'image/kinoico.svg' %}" alt="nope">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+            </div>
+ 
+        {% if first_name %}
+            <div class="dropdown">
+                <a class="btn dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ first_name }}
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">Личный кабинет</a></li>
+                  <li><a><hr class="dropdown-divider"></a></li>
+                  <li><a id="logout" class="dropdown-item" href="#">Выйти</a></li>
+                </ul>
+            </div>
+        {% else %}
+            <a class="nav-link text-white" href="{% url 'auth' %}">Войти</a>
+        {% endif %}
+    </nav>
+
+    <main class="container acc">
+        <h1>Личный кабинет</h1>
+
+        <div class="mt-4">
+            <p>Логин: {{ username }}</p>
+            
+            {% if first_name %}
+                <p>Имя: {{ first_name }}</p>
+            {% else %}
+                <p>Имя: не записано</p>
+            {% endif %}
+
+            {% if email %}
+                <p>Почта: {{ email }}</p>
+            {% else %}
+                <p>Почта: не записано</p>
+            {% endif %}
+
+            {% if date_joined %}
+                <p>Время регистрации: {{ date_joined }}</p>
+            {% else %}
+                <p>Вермя регистрации: не записано</p>
+            {% endif %}
+        </div>
+    </main>
+
+    <!-- Flooter -->
+    <div id="flooter"></div>
+    
+    <!-- Java script -->
+    <script type="text/javascript" src="{% static 'js/inner.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/send.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/logout.js' %}"></script>
+</body>
+</html>

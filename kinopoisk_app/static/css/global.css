@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.bg-white {
+    background-color: white;
+    padding-bottom: 2%;
+    padding-top: 0.4%;
+    margin-top: 1%;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.header {
+    margin-top: 1%;
+}
+
+.text-hover:hover {
+    color: #f50;
+}

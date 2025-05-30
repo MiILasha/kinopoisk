@@ -1,0 +1,39 @@
+.p-margin {
+    margin-bottom: auto;
+}
+
+.card-film {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flap_img {
+    width: 9.5em;
+    max-width: 160px;
+    margin: 6% 8%;
+}
+
+.film-card {
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    max-width: 540px;
+}
+
+.grey {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.film-title {
+    color: #212529;
+    text-decoration: none;
+}
+
+.dir-link {
+    color: rgba(0, 0, 0, 0.6);
+}
