@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{{ title }} - Кинопоиск</title>
 
     <!-- Favicon -->
     <link rel="icon" href="image/kinopoisk-ico.png" sizes="32x32">
@@ -41,13 +41,13 @@
                 </a>
               
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'profile' %}">�������</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">Профиль</a></li>
                   <li><a><hr class="dropdown-divider"></a></li>
-                  <li><a id="logout" class="dropdown-item" href="#">�����</a></li>
+                  <li><a id="logout" class="dropdown-item" href="#">Выйти</a></li>
                 </ul>
             </div>
         {% else %}
-            <a class="nav-link text-white" href="{% url 'auth' %}">�����</a>
+            <a class="nav-link text-white" href="{% url 'auth' %}">Войти</a>
         {% endif %}
     </nav>
     
@@ -60,50 +60,50 @@
                 </div>
                 <div style="width: 600px;" class="col">
                     <div class="film-header">
-                        <p class="film-text film-text-name">{{ title }} {{ release_date }}<p>
+                        <p class="film-text film-text-name">{{ title }} ({{ release_date }})<p>
                         <h3 class="film-text film-text-eng film-text-grey">{{ original_title }} {{ requirement_age }}+</h3>
                     </div>
 
-                    <h3 class="film-text film-the-film">� ������</h3>
+                    <h3 class="film-text film-the-film">О фильме</h3>
                     <div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ requirement_age }}</div>
+                            <div class="film-text film-text-grey film-first">Год производства</div><div class="film-text text-hover">{{ prod_date }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ prod_date }}</div>
+                            <div class="film-text film-text-grey film-first">Страна</div><div class="film-text text-hover">{{ prod_country }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ prod_country }}</div>
+                            <div class="film-text film-text-grey film-first">Жанр</div><div class="film-text text-hover">{{ prod_country }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ director }}</div>
+                            <div class="film-text film-text-grey film-first">Режиссер</div><div class="film-text text-hover">{{ director }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ scenario }}</div>
+                            <div class="film-text film-text-grey film-first">Сценарий</div><div class="film-text text-hover">{{ scenario }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ producer }}</div>
+                            <div class="film-text film-text-grey film-first">Продюсер</div><div class="film-text text-hover">{{ producer }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ operator }}</div>
+                            <div class="film-text film-text-grey film-first">Оператор</div><div class="film-text text-hover">{{ operator }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ composer }}</div>
+                            <div class="film-text film-text-grey film-first">Композитор</div><div class="film-text text-hover">{{ composer }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ artist }}</div>
+                            <div class="film-text film-text-grey film-first">Художник</div><div class="film-text text-hover">{{ artist }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ mounting }}</div>
+                            <div class="film-text film-text-grey film-first">Монтаж</div><div class="film-text text-hover">{{ mounting }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ budget }}</div>
+                            <div class="film-text film-text-grey film-first">Бюджет</div><div class="film-text text-hover">{{ budget }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ fees }}</div>
+                            <div class="film-text film-text-grey film-first">Сборы в мире</div><div class="film-text text-hover">{{ fees }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">���</div><div class="film-text text-hover">{{ time }}</div>
+                            <div class="film-text film-text-grey film-first">Время</div><div class="film-text text-hover">{{ hours }} ч {{ minutes }} мин</div>
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
 
         <!-- Video -->
         <div class="container plyr-video" align="center">
-            <video width="760" poster="{% static 'image/topgun-poster.jpg' %}" controls="" autoplay="" name="media">
+            <video width="760" poster="{% static 'image/topgun-poster.jpg' %}" controls="" name="media">
                 <source src="{{ film_link }}" type="video/mp4">
             </video>
         </div>

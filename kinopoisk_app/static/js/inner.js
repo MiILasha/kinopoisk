@@ -3,8 +3,8 @@ $("#flooter").prepend(`
         <section class="feedback">
             <div class="container">
                 <div class="col-sm-12 flooter-text">
-                    <spam class="flooter-text-year">ÚûÚ ${d.getFullYear()}, Kinopoisk</spam>
-                    <spam class="flooter-text-company">ÚûÚ <spam class="flooter-text-company-name">Artem?</spam></spam>
+                    <spam class="flooter-text-year">${d.getFullYear()}, Kinopoisk</spam>
+                    <spam class="flooter-text-company"><spam class="flooter-text-company-name">Artem?</spam></spam>
                 </div>
             </div>
         </section>

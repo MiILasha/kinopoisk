@@ -16,9 +16,8 @@ def index(request):
 def film_page(request, link_title):
     try:
         page = FilmPage.objects.get(link_title = link_title)
-
+      
         context = {
-            'first_name' : request.user.first_name,
             'title' : page.title,
             'poster' : page.poster,
             'original_title' : page.original_title,
@@ -35,13 +34,19 @@ def film_page(request, link_title):
             'mounting' : page.mounting,
             'budget' : page.budget,
             'fees' : page.fees,
-            'time' : page.time,
+            'hours' : page.time.hour,
+            'minutes' : page.time.minute,
             'film_link' : page.film_link
-        } 
+        }
+
+        if request.user.first_name:
+            context['first_name'] = request.user.first_name
+        else:
+            context['first_name'] = ''
 
         return render(request, 'filmpage.html', context)
     except (KeyError, FilmPage.DoesNotExist):
-        return render(request, 'filmpage.html')
+        return render(request, 'index.html')
     
 def oppenheimer(request):
     try:
