@@ -25,6 +25,7 @@ def film_page(request, link_title):
             'requirement_age' : page.requirement_age,
             'prod_date' : page.prod_date,
             'prod_country' : page.prod_country,
+            'genre' : page.genre,
             'director' : page.director,
             'scenario' : page.scenario,
             'producer' : page.producer,
@@ -36,14 +37,15 @@ def film_page(request, link_title):
             'fees' : page.fees,
             'hours' : page.time.hour,
             'minutes' : page.time.minute,
-            'film_link' : page.film_link
+            'film_link' : page.film_link,
+            'video_poster' : page.video_poster
         }
 
-        if request.user.first_name:
-            context['first_name'] = request.user.first_name
-        else:
+        if request.user.is_anonymous:
             context['first_name'] = ''
-
+        else:
+            context['first_name'] = request.user.first_name
+        
         return render(request, 'filmpage.html', context)
     except (KeyError, FilmPage.DoesNotExist):
         return render(request, 'index.html')
@@ -79,7 +81,7 @@ def profile(request):
         }
         return render (request, 'profile.html', context)
     except AttributeError as e:
-        return render (request, 'profile.html')
+        return render (request, 'profile.html') 
 
 def auth(request):
     if request.method =='POST':

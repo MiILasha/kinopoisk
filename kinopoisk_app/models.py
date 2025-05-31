@@ -23,6 +23,7 @@ class FilmPage(models.Model):
     requirement_age = models.IntegerField()
     prod_date = models.CharField(max_length = 4)
     prod_country = models.CharField(max_length = 30)
+    genre = models.CharField(max_length = 100)
     director = models.CharField(max_length=100)
     scenario = models.CharField(max_length=100)
     producer = models.CharField(max_length=100)
@@ -34,5 +35,6 @@ class FilmPage(models.Model):
     fees = models.CharField(max_length=30)
     time = models.TimeField(default="00:00:00")
     film_link = models.CharField(max_length=500)
+    video_poster = models.CharField(max_length=30)
     def __str__(self):
         return f'{self.title}'

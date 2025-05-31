@@ -73,7 +73,7 @@
                             <div class="film-text film-text-grey film-first">Страна</div><div class="film-text text-hover">{{ prod_country }}</div>
                         </div>
                         <div class="film-film-text">
-                            <div class="film-text film-text-grey film-first">Жанр</div><div class="film-text text-hover">{{ prod_country }}</div>
+                            <div class="film-text film-text-grey film-first">Жанр</div><div class="film-text text-hover">{{ genre }}</div>
                         </div>
                         <div class="film-film-text">
                             <div class="film-text film-text-grey film-first">Режиссер</div><div class="film-text text-hover">{{ director }}</div>
@@ -112,7 +112,7 @@
 
         <!-- Video -->
         <div class="container plyr-video" align="center">
-            <video width="760" poster="{% static 'image/topgun-poster.jpg' %}" controls="" name="media">
+            <video width="760" poster="{% static video_poster %}" controls="" name="media">
                 <source src="{{ film_link }}" type="video/mp4">
             </video>
         </div>
